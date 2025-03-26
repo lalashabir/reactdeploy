@@ -1,6 +1,5 @@
 name: react deploy
 on: 
-  - push
   - workflow_dispatch
 jobs:      
   deploy:     
