@@ -1,12 +1,14 @@
- name: react deploy 
- on: push 
- jobs:      
- deploy     
- runs-on: ubuntu-latest     
- steps:         
- - name: Install dependencies 
-         run: npm ci     
-             - name: building    
-                  run: npm run build    
-                       - name: test      
-                          run: echo "work"
+name: react deploy
+on: push
+jobs:      
+  deploy:     
+    runs-on: ubuntu-latest     
+    steps:         
+      - name: Install dependencies
+        run: npm ci     
+
+      - name: building    
+        run: npm run build    
+
+      - name: test      
+        run: echo "work"
