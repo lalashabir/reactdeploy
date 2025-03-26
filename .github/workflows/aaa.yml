@@ -1,5 +1,7 @@
 name: react deploy
-on: push,workflow_dispached
+on: 
+  - push
+  - workflow_dispatch
 jobs:      
   deploy:     
     runs-on: ubuntu-latest     
